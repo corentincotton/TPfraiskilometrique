@@ -1,0 +1,2 @@
+module FraiskilometriquesHelper
+end

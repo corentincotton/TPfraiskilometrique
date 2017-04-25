@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fraiskilometriques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Date</th>
+      <th>Chevaux</th>
+      <th>Km</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fraiskilometriques.each do |fraiskilometrique| %>
+      <tr>
+        <td><%= fraiskilometrique.nom %></td>
+        <td><%= fraiskilometrique.date %></td>
+        <td><%= fraiskilometrique.chevaux %></td>
+        <td><%= fraiskilometrique.km %></td>
+        <td><%= fraiskilometrique.total %></td>
+        <td><%= link_to 'Show', fraiskilometrique %></td>
+        <td><%= link_to 'Edit', edit_fraiskilometrique_path(fraiskilometrique) %></td>
+        <td><%= link_to 'Destroy', fraiskilometrique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fraiskilometrique', new_fraiskilometrique_path %>

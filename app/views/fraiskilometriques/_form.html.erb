@@ -1,0 +1,42 @@
+<%= form_for(fraiskilometrique) do |f| %>
+  <% if fraiskilometrique.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fraiskilometrique.errors.count, "error") %> prohibited this fraiskilometrique from being saved:</h2>
+
+      <ul>
+      <% fraiskilometrique.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nom %>
+    <%= f.text_field :nom, class:"input", id:"nom"%>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.text_field :date, class:"input", id:"date" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :chevaux %>
+    <%= f.number_field :chevaux, class:"input", id:"chevaux" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :km %>
+    <%= f.number_field :km, class:"input", id:"km" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :total %>
+    <%= f.text_field :total, class:"input", id:"total", disabled: true %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "valider", id:"actions" %>
+  </div>
+<% end %>

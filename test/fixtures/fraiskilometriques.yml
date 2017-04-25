@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  date: MyString
+  chevaux: 1
+  km: 1
+  total: 1.5
+
+two:
+  nom: MyString
+  date: MyString
+  chevaux: 1
+  km: 1
+  total: 1.5

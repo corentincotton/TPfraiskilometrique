@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @fraiskilometrique.nom %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @fraiskilometrique.date %>
+</p>
+
+<p>
+  <strong>Chevaux:</strong>
+  <%= @fraiskilometrique.chevaux %>
+</p>
+
+<p>
+  <strong>Km:</strong>
+  <%= @fraiskilometrique.km %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @fraiskilometrique.total %>
+</p>
+
+<%= link_to 'Edit', edit_fraiskilometrique_path(@fraiskilometrique) %> |
+<%= link_to 'Back', fraiskilometriques_path %>

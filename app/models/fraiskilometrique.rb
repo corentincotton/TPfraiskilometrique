@@ -1,0 +1,2 @@
+class Fraiskilometrique < ApplicationRecord
+end
